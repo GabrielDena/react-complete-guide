@@ -1,12 +1,12 @@
 import ExpenseDate from './ExpenseDate';
 
-export type ExpenseItem = {
+export type ExpenseItemType = {
     date: Date;
     title: string;
     amount: string;
 };
 
-export default function ExpenseItem({ date, title, amount }: ExpenseItem) {
+export default function ExpenseItem({ date, title, amount }: ExpenseItemType) {
     return (
         <div className='mx-4 flex items-center justify-between rounded-xl bg-zinc-600 p-2 align-middle text-base shadow-lg'>
             <ExpenseDate date={date} />
