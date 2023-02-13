@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ExpenseList from './components/ExpenseList';
+import ExpenseList from './components/Expenses/ExpenseList';
 
 function App() {
     const [count, setCount] = useState(0);
@@ -17,7 +17,7 @@ function App() {
     ];
 
     return (
-        <div className='flex h-screen flex-col justify-center bg-zinc-800 align-middle'>
+        <div className='flex h-screen flex-col justify-center align-middle'>
             <ExpenseList expenses={expenses} />
         </div>
     );
